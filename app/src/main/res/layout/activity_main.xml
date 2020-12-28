@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnCityId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get city id"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <Button
+        android:id="@+id/useCityId"
+        android:layout_toRightOf="@+id/btnCityId"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="use city id"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/useCityName"
+        android:layout_toRightOf="@+id/useCityId"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="city by name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCityId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:id="@+id/cityDataInput"
+        android:text="city name"
+        android:hint="city name"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@+id/cityDataInput"
+        android:id="@+id/lView"
+        />
+</RelativeLayout>
+
